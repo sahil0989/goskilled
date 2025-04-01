@@ -76,7 +76,9 @@ const RegisterComponent = () => {
       if (intervalId) clearInterval(intervalId);
     };
   }, [phoneData.otpSent, phoneData.timer]);
-
+  
+  console.log(`Backend: ${backendUrl}`)
+  
   const handleRegister = async (data) => {
     setError("");
     setSuccess("");
@@ -87,6 +89,7 @@ const RegisterComponent = () => {
         `${backendUrl}/api/auth/register`,
         data
       );
+
       setSuccess(response.data.message);
       updatePhoneData({
         otpSent: true,

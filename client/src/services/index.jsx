@@ -1,1 +1,1 @@
-export const backendUrl = process.env.REACT_BACKEND_URL
+export const backendUrl = process.env.REACT_APP_BACKEND_URL
