@@ -43,6 +43,7 @@ const LoginComponent = () => {
     };
   }, []);
 
+  console.log(`${backendUrl}`)
   // Handle login
   const handleLogin = async (e) => {
     e.preventDefault();
